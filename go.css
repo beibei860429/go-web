@@ -1,0 +1,272 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;   
+}
+
+header{
+    padding: 20px 10% 15px;
+    text-align: center;
+    background-image: url(background.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+header div{
+    margin-top: 8px;
+}
+
+nav{
+    display: flex;
+    padding: 0 10%;
+    justify-content: space-around;
+    background-color: black;
+    position: sticky;
+    top: 0px;
+}
+
+nav div{
+    padding: 14px 0px;
+    font-size: 18px;
+}
+
+.titleName{
+    color: white;
+}
+
+.titleName:hover{
+    color: yellow;
+}
+
+main{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 30px 45px 0px 45px;
+}
+
+.left{
+    width: 25%;
+    
+}
+
+.go-equipment{
+    width: 90%;
+}
+
+.right{
+    width: 75%;
+    padding-left: 10px;
+}
+
+.historyBox{
+    border-bottom: 1.5px dashed gray;
+    margin-bottom: 16px;
+}
+
+.goIntroduction{
+    margin-top: 20px;
+    line-height: 28px;
+    width: 90%;
+}
+
+.goHistory{
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.introduce{
+    line-height: 26px;
+    text-align: justify;
+    margin-bottom: 16px;
+}  
+
+.koreaIntroduce{
+    line-height: 26px;
+    text-align: justify;
+    padding-bottom: 10px;
+    border-bottom: 1.5px dashed gray;
+    margin-bottom: 16px;
+}
+
+.introduce:last-child{
+    border-bottom:none
+}
+
+ul{
+    list-style-position: inside;/*符號在標籤範圍之內顯示*/
+    margin-left: 10px;
+    padding-top: 10px;
+}
+
+ul li{
+    text-indent:-1.4em; /*凸排*/
+    padding-left: 30px;
+}
+
+.peopleIntroduction{
+    margin-top: 10px;
+    line-height: 28px;
+    text-align: justify;
+    border-bottom: 1.5px dashed gray;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+.peopleIntroduction:last-child{
+    border-bottom: none;
+}
+
+.peopleName{
+    font-size: 22px;
+}
+
+.japanBox{
+    display: flex;
+}
+
+.nihonImg{
+    width: 30%;
+    margin-bottom: 20px;
+}
+
+.Nihon-kiin{
+    width:90%;
+}
+
+.japanIntroduction{
+    width: 70%;
+    padding-left: 10px;
+    text-align: justify;
+    line-height: 28px;
+}
+
+.jpMathBox{
+    display: flex;
+}
+
+.jpMath{
+    width: 75%; 
+    padding-right: 40px;
+}
+
+.myChart{
+    width: 25%; 
+    padding-top: 40px;
+}
+
+
+table, tr, td{
+    border: 1px solid gray;
+    border-collapse: collapse;
+    padding: 5px 4px;
+}
+
+tr:hover{
+    background-color: rgb(217, 217, 217);
+}
+
+@media(max-width: 768px){
+    main{
+        padding: 30px 36px 0px 36px;
+    }
+
+    nav{
+        padding: 0 5%;  
+    }
+
+    .left{
+        width: 35%;
+    }
+
+    .right{
+        width: 65%;
+    }
+
+    .nihonImg{
+        width: 40%;
+    }
+
+    .japanIntroduction{
+        width: 60%;
+        margin-bottom: 20px;
+    }
+
+    .jpMath{
+        width: 60%; 
+        padding-right: 0px;
+    }
+    
+    .chartBox{
+        display: flex;
+    }
+
+    .myChart{
+        width: 40%;
+        margin-left: 10px; 
+    }
+}
+
+@media(max-width: 576px){
+    .left{
+        width: 100%;   
+    }
+
+    .go-equipment{
+        width: 100%;
+    }
+
+    .goIntroduction{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .right{
+        width: 100%;
+        padding-left: 0px;
+    }
+
+    .japanBox{
+        display: block;
+    }
+
+    .nihonImg{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .japanIntroduction{
+        width: 100%;
+    }
+
+    .jpMathBox{
+        display: block;
+    }
+
+    .jpMath{
+        width: 100%;
+        padding-right: 0px;
+    }
+
+    .myChart{
+        padding-top: 0px;
+        width: 90%;
+        padding-bottom: 20px;
+        justify-content: center;
+        margin:auto
+    }
+}
+
+@media(max-width: 460px){
+    main{
+        padding: 30px 24px 0px 24px;
+    }
+
+    .titleName{
+        font-size: 15px;
+    }
+    
+}
